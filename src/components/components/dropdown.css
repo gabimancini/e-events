@@ -1,0 +1,22 @@
+.dropdown-menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 150px;
+}
+.subItem{
+    display: flex;
+    position: absolute;
+    top:30px;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+   
+}
+.subItem button{ 
+    color: #fff;
+}
+.subItem img{
+    max-width: 18px;
+}
