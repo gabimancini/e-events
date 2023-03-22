@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
@@ -5,8 +6,8 @@ import {
   auth,
   registerWithEmailAndPassword,
   signInWithGoogle,
-} from "./firebase-config";
-import "./Register.css";
+} from "./../../../firebase-config";
+import GroupField from "../../molecules/GroupField";
 
 function Register() {
   const [email, setEmail] = useState("");
@@ -28,23 +29,20 @@ function Register() {
   return (
     <div className="register">
       <div className="register__container">
-        <input
-          type="text"
-          className="register__textBox"
+        <GroupField
+          type="text" 
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Full Name"
         />
-        <input
-          type="text"
-          className="register__textBox"
+        <GroupField
+          type="text" 
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="E-mail Address"
         />
-        <input
-          type="password"
-          className="register__textBox"
+        <GroupField
+          type="password" 
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
@@ -60,7 +58,7 @@ function Register() {
         </button>
 
         <div>
-          Already have an account? <Link to="/">Login</Link> now.
+          Already have an account? <Link to="/login">Login</Link> now.
         </div>
       </div>
     </div>

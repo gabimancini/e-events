@@ -1,0 +1,67 @@
+.login-form{
+    width: 326px;
+    padding-top: 2rem;
+    padding-top: 114px;
+}
+.login-form h2{
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 36px;
+}
+.login-form label {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #989898;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.login-form p{
+    position: relative;
+    text-align: center;
+   margin-bottom: 1.5rem;
+}
+.login-form p::after{
+    content:"";
+    height: 1px;
+    width: 45%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    right: 0;
+}
+.login-form p::before{
+    content:"";
+    height: 1px;
+    width: 45%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    left: 0;
+}
+.forgotPassword{
+    margin-bottom: 4rem;
+    text-align: center; 
+}
+.forgotPassword a, .haveAccount a{ 
+    color: #000;
+    text-decoration: underline;
+}
+.haveAccount{
+    text-align: center;
+}
+.login-form .button{
+    margin-bottom: 1rem;
+    height: 35px;
+    padding: 0 !important;
+}
+.button.loginWithGoogle{
+    margin-bottom: 6rem;
+}
+.button.loginWithEmail{
+    margin-top: 2rem;
+}

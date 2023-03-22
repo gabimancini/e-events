@@ -3,16 +3,18 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 150px;
+    width: 120px;
 }
-.subItem{
-    display: flex;
+.subItems{
+   
     position: absolute;
     top:30px;
     background-color: #000;
     color: #fff;
     width: 100%;
-   
+}
+.subItem{
+    display: flex;
 }
 .subItem button{ 
     color: #fff;

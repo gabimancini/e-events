@@ -1,6 +1,9 @@
-const Button = ({text}) => {
+const Button = ({text, onClick, className}) => {
+    const style={
+        width: "100%"
+    }
     return(
-        <button>{text}</button>
+        <button className={className} onClick={onClick} style={style}>{text}</button>
     )
 }
 export default Button;

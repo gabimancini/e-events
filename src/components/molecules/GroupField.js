@@ -1,4 +1,4 @@
-import Input from '../atoms/Input';
+import Input from '../atoms/Input/Input';
 import Label from '../atoms/Label';
 const GroupField = ({name, children, type, id, handleChange}) => {
     return(

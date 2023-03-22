@@ -1,8 +1,15 @@
-@import url('components/organisms/Hero/hero.css');
+@font-face {
+  font-family: 'SFCompact';
+  src: local('SFCompact'), url(./fonts/SFCompactRounded.ttf) format('woff');
+}
 *{
   margin:0;
   box-sizing: border-box;
   padding: 0;
+}
+body{
+  font-family: 'SFCompact';
+  margin-top: 3rem;
 }
 a{
   text-decoration: none;
@@ -10,3 +17,12 @@ a{
 img{
   max-width: 100%;
 }
+
+section .container{
+  border-radius: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(211, 211, 211, 0.3);
+}
+ 

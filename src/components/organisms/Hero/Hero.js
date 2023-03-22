@@ -5,16 +5,15 @@ import classnames from "classnames";
 const Hero = () => {
     return (
         <section className='hero-section'>
-            <div className='hero-section-text'><h1>Welcome
-bla bla bla bla bla</h1>
-<p>Lorem ipsum dolor sit amet, torquatos adolescens his ad. Eum ut officiis adversarium, sint aperiam vituperatoribus no sea. Lorem ipsum dolor sit amet, torquatos adolescens his ad.</p>
-          <div>
-           <Link  className="black" text="How it Works" />
-           <Link  className="ghost" text="Get Started" />
-           </div>
-           </div>
-            <div>
-                <img src={HeroImg} alt="Hearts" />
+            <div className='container'>
+                <div className='hero-section-text'><h1>Welcome
+                    bla bla bla bla bla</h1>
+                    <p>Lorem ipsum dolor sit amet, torquatos adolescens his ad. Eum ut officiis adversarium, sint aperiam vituperatoribus no sea. Lorem ipsum dolor sit amet, torquatos adolescens his ad.</p>
+                        <Link className="black" text="How it Works" />
+                </div>
+                <div>
+                    <img src={HeroImg} alt="Hearts" />
+                </div>
             </div>
         </section>
     )
